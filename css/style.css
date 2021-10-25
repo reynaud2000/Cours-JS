@@ -27,7 +27,7 @@ a{
 
 
 :root{
-    --main-color: #d1d1d2;
+    --main-color: rgba(211,207,207,0.9);
     --bg-header-primary : #ffffff;
     --bg-header-secondary : #3d3838;
 }
