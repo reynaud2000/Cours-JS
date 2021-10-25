@@ -1,5 +1,7 @@
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: #ccc url(https://cdn.pocket-lint.com/r/s/1200x/assets/images/149433-tv-feature-what-order-should-you-watch-the-batman-movies-and-shows-image1-gyquc3whrm.jpg) no-repeat fixed center center /cover;
 }
 
 *{
@@ -20,7 +22,9 @@ a{
     color: #000;
 }
 
+
 /*theme*/
+
 
 :root{
     --main-color: #d1d1d2;
@@ -28,19 +32,73 @@ a{
     --bg-header-secondary : #3d3838;
 }
 
+
 header, main, footer{
     max-width: 80rem;
-    border: solid .1rem var(--bg-header-secondary);
     margin: 0 auto;
+    background-color: var(--main-color);
 }
 
+header {
+    padding: 1rem;
+    background-color: var(--main-color);
+    
+    
+}
+
+header h1::before{
+    content: '\01F3AC';
+    vertical-align: 0.3rem;
+}
+
+
+ 
 main nav ol, nav h2, section h2, section p{
-    padding: 2.5rem;
+    padding: 1rem;
+    line-height: 3.5rem;
+   
 }
 
-footer{
-    margin-top: 3.0rem;
+
+main nav h2, main section h2{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-header-primary);
+    box-shadow: 0 .3rem 0 var(--bg-header-secondary);
+    text-transform:  capitalize;
+    color: #fafafa;
+    text-shadow: .2rem .2rem 0 rgb(82, 81, 81);
+    font-size: x-large;
 }
+
+main section p, footer p{
+    line-height: 2.6rem;
+}
+
+main nav .focus, main section .focus{
+    transition: all 500ms ease-in-out;
+}
+main nav .focus:target, main section .focus:target{
+    background: #000;
+}
+main nav ol{
+    padding-left: 2.5rem;
+    
+}
+
+main nav ol li a {
+    text-transform: capitalize;
+}
+main{
+    padding: 1rem;
+}
+section div img{
+    display: block;
+    width: 100%;
+}
+
 footer, p{
     text-align: center;
+    text-transform: capitalize;
 }
