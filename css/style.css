@@ -1,1 +1,46 @@
-Commande ECHO activ�e.
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,p,figure,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*theme*/
+
+:root{
+    --main-color: #d1d1d2;
+    --bg-header-primary : #ffffff;
+    --bg-header-secondary : #3d3838;
+}
+
+header, main, footer{
+    max-width: 80rem;
+    border: solid .1rem var(--bg-header-secondary);
+    margin: 0 auto;
+}
+
+main nav ol, nav h2, section h2, section p{
+    padding: 2.5rem;
+}
+
+footer{
+    margin-top: 3.0rem;
+}
+footer, p{
+    text-align: center;
+}
