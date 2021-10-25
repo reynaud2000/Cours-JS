@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap');
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     background: #ccc url(https://cdn.pocket-lint.com/r/s/1200x/assets/images/149433-tv-feature-what-order-should-you-watch-the-batman-movies-and-shows-image1-gyquc3whrm.jpg) no-repeat fixed center center /cover;
+}
+body{
+    font: 1.6rem 'Zen Maru Gothic', sans-serif;
 }
 
 *{
@@ -51,8 +56,6 @@ header h1::before{
     vertical-align: 0.3rem;
 }
 
-
- 
 main nav ol, nav h2, section h2, section p{
     padding: 1rem;
     line-height: 3.5rem;
